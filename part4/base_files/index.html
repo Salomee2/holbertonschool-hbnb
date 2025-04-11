@@ -2,37 +2,42 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HBnB - Accueil</title>
-	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-	<header>
+	<header class="site-header">
 		<img src="images/logo.png" alt="Logo HBnB" class="logo">
-		<a href="login.html" class="login-button">Connexion</a>
+		<a href="login.html" class="login-button" id="login-link">Connexion</a>
 	</header>
 
-	<nav>
+	<nav class="navbar">
 		<a href="index.html">Accueil</a>
 		<a href="login.html">Connexion</a>
 	</nav>
 
 	<main>
-		<section class="place-card">
-			<h2>Appartement Paris Centre</h2>
-			<p>120 € / nuit</p>
-			<a href="place.html" class="details-button">Voir détails</a>
+		<h1 class="page-title">Trouvez votre hébergement idéal</h1>
+
+		<section id="filter">
+			<label for="price-filter"><strong>Prix maximum :</strong></label>
+			<select id="price-filter">
+				<option value="all">Tous</option>
+				<option value="100">100 €</option>
+				<option value="150">150 €</option>
+				<option value="200">200 €</option>
+			</select>
 		</section>
 
-		<section class="place-card">
-			<h2>Villa à Marseille</h2>
-			<p>200 € / nuit</p>
-			<a href="place.html" class="details-button">Voir détails</a>
+		<section id="places-list">
 		</section>
 	</main>
 
 	<footer>
-		<p>HBnB - Tous droits réservés</p>
+		<p>&copy; 2024 HBnB Evolution. Tous droits réservés.</p>
 	</footer>
-	<script src="scripts/main.js"></script>
+
+	<script src="scripts/scripts.js"></script>
 </body>
 </html>

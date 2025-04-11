@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HBnB - Détails du lieu</title>
-	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 	<header>
 		<img src="images/logo.png" alt="Logo HBnB" class="logo">
-		<a href="login.html" class="login-button">Connexion</a>
+		<a href="login.html" class="login-button" id="login-link">Connexion</a>
 	</header>
 
 	<nav>
@@ -17,32 +17,24 @@
 	</nav>
 
 	<main class="place-details">
-		<section class="place-info">
-			<h2>Appartement Paris Centre</h2>
-			<p><strong>Hôte :</strong> Marie Dupont</p>
-			<p><strong>Prix :</strong> 120 € / nuit</p>
-			<p><strong>Description :</strong> Très bel appartement en plein cœur de Paris.</p>
-			<p><strong>Équipements :</strong> Wifi, cuisine, chauffage</p>
+		<section id="place-details" class="place-info">
 		</section>
 
 		<section>
 			<h3>Commentaires :</h3>
-			<div class="review-card">
-				<p>🌟🌟🌟🌟🌟 Très bon séjour !</p>
-				<p><em>par Karim</em></p>
-			</div>
-			<div class="review-card">
-				<p>🌟🌟🌟 Appartement propre et bien situé.</p>
-				<p><em>par Colette</em></p>
+			<div id="reviews">
 			</div>
 		</section>
 
-		<a href="add_review.html" class="details-button">Ajouter un avis</a>
+		<section id="add-review" style="display: none;">
+			<a id="add-review-button" class="details-button">Ajouter un avis</a>
+		</section>
 	</main>
 
 	<footer>
 		<p>HBnB - Tous droits réservés</p>
 	</footer>
-	<script src="scripts/main.js"></script>
+
+	<script src="scripts/scripts.js"></script>
 </body>
 </html>
